@@ -1,0 +1,31 @@
+FIELD_DESCRIPTIONS = {
+    "Utility" : "name of the utility company, shows up in the beginning of the text, usually repeated multiple times in the text",
+    "ID": "identify number on the document (sometimes called a 'DER' or 'IPP' or 'File#' or 'Doc#'), repeated multiple times throughout the text along with other elements of the header",
+    "Date": "located close to ID, also repeated with the header elements",
+    "Non Cost Share Total": "total cost of interconnection (every now and then there are two when the proposal includes multiple options for project design)",
+    "Cost Share Total": "total cost if cost sharing is done, sometimes not included in the document, set to 0 if is not (potentially could be two if cost share numbers are provided for two design options)",
+    "Cost Share Check": "boolean value indicating whether or not there was a portion of the document indicating a cost sharing amount",
+    "Address": "address of the project, usually located in the beginning of the text",
+    "Division": "division the project falls under, usually located in the beginning of the text",
+    "Project Size": "size of the project, usually located near the words 'generator system' in units of kVA",
+    "Feeder Size": "feeder size, usually in units of kV, located in the beginning of the document near 'circuit number', and in the 'EPS' section of the text near 'supply voltage'",
+    "Circuit Number": "circuit number, usually located in the beginning of the text near 'feeder size'",
+    "Substation Name": "substation name, usually located in the 'EPS' section or also in the beginning",
+    "Substation Size": "the maximum nameplate rating of the substation, usually located in the 'EPS' section, reutrn units of kVA (it usually is already in these units but rarely it is in MV)",
+}
+
+EXTRACTION_SPEC = {
+    "Utility" : "",
+    "ID": "",
+    "Date": "",
+    "Non Cost Share Total": "",
+    "Cost Share Total": "",
+    "Cost Share Check": "",
+    "Address": "",
+    "Division": "",
+    "Project Size": "",
+    "Feeder Size": "",
+    "Circuit Number": "",
+    "Substation Name": "",
+    "Substation Size": "",
+}
